@@ -1,23 +1,13 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">    
-    <title>Blog Michal  | <%= title %></title>
-</head>
-  <body>
-    <nav>
-    <div class="site-title">
-        <a href="/">Blog Michal</a>
-        <p>Michal's site</p>
-    </div>
-    <ul>
-        <li><a href="/">Blogs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blogs/create">New Blog</a></li>
-    </ul>
-    </nav>
-      <div class="not-found content">
-        OOPS, page not found :)
-    </div>
-  </body>
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="not-found content">
+    OOPS, page not found :)
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
 </html>
